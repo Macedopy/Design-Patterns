@@ -1,5 +1,5 @@
 package design.pattern.proxy;
 
-public class ReportGeneratorInterface {
-
+public interface ReportGeneratorInterface {
+    Report generateReport();
 }

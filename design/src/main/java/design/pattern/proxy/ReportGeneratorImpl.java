@@ -2,10 +2,10 @@ package design.pattern.proxy;
 
 import java.util.UUID;
 
-public class ReportGenerator {
+public class ReportGeneratorImpl {
     private final Report report;
 
-    ReportGenerator(Report report)
+    ReportGeneratorImpl(Report report)
     {
         this.report = report;
     }
