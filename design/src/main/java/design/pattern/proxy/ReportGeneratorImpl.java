@@ -1,7 +1,5 @@
 package design.pattern.proxy;
 
-import java.util.UUID;
-
 public class ReportGeneratorImpl {
     private final Report report;
 
