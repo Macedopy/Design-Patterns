@@ -17,8 +17,8 @@ public class AdapterController {
 
     @PostMapping
     public void generateReport() {
+        CreatorPdfAdapter creatorPdfAdapter = new CreatorPdfAdapter();
+        SalesReportGenerator salesReportGenerator = new SalesReportGenerator(pdfAdapter, creatorPdfAdapter);
         salesReportGenerator.generate();
-        creatorPdfAdapter.generate("custom_name.pdf", "custom_content");
-        pdfAdapter.generate("custom_name.pdf", "custom_content");
     }
 }

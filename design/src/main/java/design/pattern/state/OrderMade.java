@@ -15,6 +15,6 @@ public class OrderMade implements OrderState {
     @Override
     public void deliver(Order order) throws Exception {
         throw new Exception("Order is not prepared yet");
-    }
+        }
 
 }

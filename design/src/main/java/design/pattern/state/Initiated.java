@@ -13,9 +13,8 @@ public class Initiated implements OrderState {
     }
 
     @Override
-    public void deliver(Order order) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deliver'");
+    public void deliver(Order order) throws Exception {
+        throw new Exception("Order cannot be delivered, is not shipped yet");
     }
 
 }

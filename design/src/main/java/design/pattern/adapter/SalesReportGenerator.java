@@ -14,8 +14,6 @@ public class SalesReportGenerator {
     public void generate() {
         String fileName = new Date(System.currentTimeMillis()).toString() + "_sales_report.pdf";
 
-
-
-        pdfAdapter.generate(fileName, content);
+        pdfAdapter.generate(fileName, "content");
     }
 }
