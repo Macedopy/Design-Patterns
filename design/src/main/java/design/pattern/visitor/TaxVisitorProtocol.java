@@ -1,7 +1,7 @@
 package design.pattern.visitor;
 
 public interface TaxVisitorProtocol {
-    void calculateTaxesForFood(Food food);
-    void calculateTaxesForAlcoholicDrink(AlcoholicDrink alcoholicDrink);
-    void calculateTaxesForCigarette(Cigarette cigarette);
+    Number calculateTaxesForFood(Food food);
+    Number calculateTaxesForAlcoholicDrink(AlcoholicDrink alcoholicDrink);
+    Number calculateTaxesForCigarette(Cigarette cigarette);
 }

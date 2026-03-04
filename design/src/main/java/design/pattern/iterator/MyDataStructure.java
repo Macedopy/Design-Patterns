@@ -6,11 +6,6 @@ public class MyDataStructure {
     private List<String> items;
     private MyIteratorProtocol<String> iterator;
 
-    MyDataStructure()
-    {
-        MyIteratorProtocol<String> iterator = new MyIteratorProtocol<String>();
-    }
-
     public void addItem(List<String> item)
     {
         for (String i : item) {
@@ -26,5 +21,10 @@ public class MyDataStructure {
     public int size()
     {
         return this.items.size();
+    }
+
+    public void changeIterator(MyIteratorProtocol<String> iterator)
+    {
+        this.iterator = iterator;
     }
 }

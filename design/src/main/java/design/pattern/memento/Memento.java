@@ -1,5 +1,8 @@
 package design.pattern.memento;
 
-public class Memento {
+import java.util.Date;
 
+public interface Memento {
+    public String getName();
+    public Date getDate();
 }

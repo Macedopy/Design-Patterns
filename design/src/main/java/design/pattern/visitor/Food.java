@@ -4,8 +4,14 @@ public class Food extends VisitableProduct {
     protected double price;
 
     public Food(double price) {
-        super();
+        super("Food", price);
         this.price = price;
     }
+
+	@Override
+	public Number getPriceWithTaxes(TaxVisitorProtocol taxVisitor) {
+		return taxVisitor.calculateTaxesForFood(this);
+	}
+    
 
 }
